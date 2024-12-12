@@ -268,7 +268,7 @@ const JumpQLandingPage = () => {
                         project.</p>
                     </div>
                     <h3 className="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Khushal 
-                      Jones <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CoFounder & CEO
+                      <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CoFounder & CEO
                         JumpQ</span></h3>
                     <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                   </div>
@@ -295,7 +295,7 @@ const JumpQLandingPage = () => {
                     <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                   </div>
                   <img className="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                    src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80"
                     alt="" />
                 </blockquote>
               </div>
@@ -341,7 +341,7 @@ const JumpQLandingPage = () => {
                     <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                   </div>
                   <img className="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
+                    src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
                     alt="" />
                 </blockquote>
                 <blockquote
@@ -363,7 +363,7 @@ const JumpQLandingPage = () => {
                     <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                   </div>
                   <img className="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
+                    src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
                     alt="" />
                 </blockquote>
               </div>
