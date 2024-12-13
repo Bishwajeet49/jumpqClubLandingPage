@@ -1,3 +1,4 @@
+import { SiFacebook, SiLinkedin, SiX } from '@icons-pack/react-simple-icons';
 import {
     ArrowRight,
     CheckCircle,
@@ -5,17 +6,14 @@ import {
     Clock,
     Cpu,
     Database,
-    Facebook,
     FileText,
     FootprintsIcon,
     Import,
     Link,
-    Linkedin,
     MessageCircle,
     Quote,
     Target,
     Users,
-    X,
     Zap,
 } from 'lucide-react';
 import { useState } from 'react';
@@ -26,7 +24,7 @@ const productFeatures = [
         title: 'Intelligent Buyer Targeting',
         description:
             'Track and engage with buyers in real-time. Enjoy next-level customer profiling with deep buyer insights.',
-        icon: <Target className='h-12 w-12 text-[#e09900]' />,
+        icon: <Target className='h-12 w-12 text-[var(--accent-color)]' />,
     },
     {
         id: 'opportunities',
@@ -98,22 +96,22 @@ const JumpQLandingPage = () => {
                         className={`${isOpen ? 'block' : 'hidden'} absolute left-0 top-0 z-50 mt-24 flex h-64 w-full flex-col items-center justify-between border-t border-gray-200 bg-white pt-5 text-sm text-gray-800 md:relative md:mt-0 md:flex md:h-24 md:w-auto md:flex-row md:border-none md:bg-transparent md:py-0 lg:text-base`}>
                         <a
                             href='#'
-                            className='transition-color ml-0 mr-0 font-bold duration-100 hover:text-[#e09900] md:ml-12 md:mr-3 lg:mr-8'>
+                            className='transition-color ml-0 mr-0 font-bold duration-100 hover:text-[var(--accent-color)] md:ml-12 md:mr-3 lg:mr-8'>
                             Home
                         </a>
                         <a
                             href='#features'
-                            className='transition-color mr-0 font-bold duration-100 hover:text-[#e09900] md:mr-3 lg:mr-8'>
+                            className='transition-color mr-0 font-bold duration-100 hover:text-[var(--accent-color)] md:mr-3 lg:mr-8'>
                             Features
                         </a>
                         <a
                             href='#pricing'
-                            className='transition-color mr-0 font-bold duration-100 hover:text-[#e09900] md:mr-3 lg:mr-8'>
+                            className='transition-color mr-0 font-bold duration-100 hover:text-[var(--accent-color)] md:mr-3 lg:mr-8'>
                             Pricing
                         </a>
                         <a
                             href='#testimonials'
-                            className='transition-color font-bold duration-100 hover:text-[#e09900]'>
+                            className='transition-color font-bold duration-100 hover:text-[var(--accent-color)]'>
                             Testimonials
                         </a>
                         <div className='flex w-full flex-col border-t border-gray-200 font-medium md:hidden'>
@@ -124,7 +122,7 @@ const JumpQLandingPage = () => {
                             </a>
                             <a
                                 href='#_'
-                                className='fold-bold relative inline-block w-full bg-[#e09900] px-5 py-3 text-center text-sm leading-none text-white'>
+                                className='fold-bold relative inline-block w-full bg-[var(--accent-color)] px-5 py-3 text-center text-sm leading-none text-white'>
                                 Get Started
                             </a>
                         </div>
@@ -137,7 +135,7 @@ const JumpQLandingPage = () => {
                         </a>
                         <a
                             href='#_'
-                            className='fold-bold relative z-40 inline-block h-full w-auto rounded bg-[#e09900] px-5 py-3 text-sm font-bold leading-none text-white shadow-md transition-all duration-300 hover:shadow-xl sm:w-full lg:bg-white lg:text-[#e09900] lg:shadow-none'>
+                            className='fold-bold relative z-40 inline-block h-full w-auto rounded bg-[var(--accent-color)] px-5 py-3 text-sm font-bold leading-none text-white shadow-md transition-all duration-300 hover:shadow-xl sm:w-full lg:bg-white lg:text-[var(--accent-color)] lg:shadow-none'>
                             Get Started
                         </a>
                         <svg
@@ -214,8 +212,7 @@ const JumpQLandingPage = () => {
                     <div
                         id='nav-mobile-btn'
                         className='absolute right-0 top-0 z-50 mr-10 mt-8 block w-6 cursor-pointer select-none sm:mt-10 md:hidden'
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
+                        onClick={() => setIsOpen(!isOpen)}>
                         <span className='mt-2 block h-1 w-full transform rounded-full bg-gray-800 duration-200 sm:mt-1'></span>
                         <span className='mt-1 block h-1 w-full transform rounded-full bg-gray-800 duration-200'></span>
                     </div>
@@ -228,7 +225,7 @@ const JumpQLandingPage = () => {
                     <div className='text-center'>
                         <h1 className='text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl'>
                             Helping Sales Teams Excel{' '}
-                            <span className='text-[#e09900]'>at Scale</span>
+                            <span className='text-[var(--accent-color)]'>at Scale</span>
                         </h1>
                         <p className='mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl'>
                             JumpQ is a Generative AI company that elevates human potential by
@@ -238,7 +235,7 @@ const JumpQLandingPage = () => {
                             <div className='rounded-md shadow'>
                                 <a
                                     href='mailto:khushal@jumpq.club'
-                                    className='fold-bold relative z-40 flex h-full w-auto w-full items-center justify-center rounded rounded-md border border-transparent bg-[#e09900] px-5 py-3 text-base font-bold font-medium leading-none shadow-md transition-all duration-300 hover:shadow-xl sm:w-full md:px-10 md:py-4 md:text-lg lg:bg-white lg:text-[#e09900] lg:shadow-none'>
+                                    className='fold-bold relative z-40 flex h-full w-auto w-full items-center justify-center rounded rounded-md border border-transparent bg-[var(--accent-color)] px-5 py-3 text-base font-bold font-medium leading-none shadow-md transition-all duration-300 hover:shadow-xl sm:w-full md:px-10 md:py-4 md:text-lg lg:bg-white lg:text-[var(--accent-color)] lg:shadow-none'>
                                     Get Started <ArrowRight className='-mr-1 ml-3 h-5 w-5' />
                                 </a>
                             </div>
@@ -248,10 +245,10 @@ const JumpQLandingPage = () => {
             </div>
 
             {/* Product Features */}
-            <div className='bg-gray-50 pt-16'>
+            <div id='product-features' className='bg-gray-50 pt-16'>
                 <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                     <div className='lg:text-center'>
-                        <h2 className='text-base font-semibold uppercase tracking-wide text-[#e09900]'>
+                        <h2 className='text-base font-semibold uppercase tracking-wide text-[var(--accent-color)]'>
                             Product Features
                         </h2>
                         <p className='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl'>
@@ -280,10 +277,10 @@ const JumpQLandingPage = () => {
 
                     {/* Comparison */}
                     <h2 className='mt-20 text-center text-3xl font-bold text-black'>
-                        Experience the JumpQ Difference
+                        Experience the JumpQ Impact
                     </h2>
                     <div className='flex items-center justify-center p-10'>
-                        <div className='mx-auto grid gap-y-10 w-full max-w-6xl justify-between md:grid-cols-2'>
+                        <div className='mx-auto grid w-full max-w-6xl justify-between gap-y-10 md:grid-cols-2'>
                             {/* Before JumpQ */}
                             <div className='space-y-8'>
                                 <h3 className='mb-6 text-2xl font-semibold text-gray-400'>
@@ -320,7 +317,7 @@ const JumpQLandingPage = () => {
 
                             {/* After JumpQ */}
                             <div className='space-y-8'>
-                                <h3 className='mb-6 text-2xl font-semibold text-[#e09900]'>
+                                <h3 className='mb-6 text-2xl font-semibold text-[var(--accent-color)]'>
                                     After JumpQ
                                 </h3>
                                 <div className='space-y-6'>
@@ -354,7 +351,9 @@ const JumpQLandingPage = () => {
                 <div className='m-auto max-w-[72rem] py-20 text-gray-500'>
                     <div className='container mx-auto px-4'>
                         <h2 className='mb-8 text-center text-4xl font-bold md:text-5xl'>
-                            <span className='text-[#e09900]'>Elevating Human Potential</span>
+                            <span className='text-[var(--accent-color)]'>
+                                Elevating Human Potential
+                            </span>
                         </h2>
 
                         <p className='mx-auto mb-12 max-w-3xl text-center text-xl text-gray-700'>
@@ -365,7 +364,7 @@ const JumpQLandingPage = () => {
 
                         <div className='mb-16 grid gap-12 md:grid-cols-2'>
                             <div>
-                                <h3 className='mb-4 text-2xl font-semibold text-[#e09900]'>
+                                <h3 className='mb-4 text-2xl font-semibold text-[var(--accent-color)]'>
                                     The Challenge
                                 </h3>
                                 <p className='mb-6 text-gray-700'>
@@ -376,7 +375,7 @@ const JumpQLandingPage = () => {
                                 </p>
                             </div>
                             <div>
-                                <h3 className='mb-4 text-2xl font-semibold text-[#e09900]'>
+                                <h3 className='mb-4 text-2xl font-semibold text-[var(--accent-color)]'>
                                     Our Solution
                                 </h3>
                                 <p className='mb-6 text-gray-700'>
@@ -390,7 +389,7 @@ const JumpQLandingPage = () => {
                         </div>
 
                         <div className='mb-16 rounded-xl p-8'>
-                            <h3 className='mb-6 text-center text-2xl font-semibold text-[#e09900]'>
+                            <h3 className='mb-6 text-center text-2xl font-semibold text-[var(--accent-color)]'>
                                 Imagine a World Where:
                             </h3>
                             <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3'>
@@ -415,7 +414,9 @@ const JumpQLandingPage = () => {
                                 We don't sell tools. We deliver outcomes. We want to be pioneers in
                                 building India's New Era of Sales.
                             </p>
-                            <p className='text-3xl font-bold text-[#e09900]'>It's still day one.</p>
+                            <p className='text-3xl font-bold text-[var(--accent-color)]'>
+                                It's still day one.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -425,7 +426,7 @@ const JumpQLandingPage = () => {
             <div className='bg-white py-16'>
                 <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                     <div className='lg:text-center'>
-                        <h2 className='text-base font-semibold uppercase tracking-wide text-[#e09900]'>
+                        <h2 className='text-base font-semibold uppercase tracking-wide text-[var(--accent-color)]'>
                             Proven Results
                         </h2>
                         <div className='mt-10 grid grid-cols-1 gap-8 md:grid-cols-3'>
@@ -437,7 +438,7 @@ const JumpQLandingPage = () => {
                                 </p>
                             </div>
                             <div className='text-center'>
-                                <Users className='mx-auto h-16 w-16 text-[#e09900]' />
+                                <Users className='mx-auto h-16 w-16 text-[var(--accent-color)]' />
                                 <h3 className='mt-4 text-xl font-bold text-gray-900'>Superhuman</h3>
                                 <p className='mt-2 text-gray-500'>
                                     Maximize reach and response time to delight customers
@@ -459,7 +460,7 @@ const JumpQLandingPage = () => {
             <div className='bg-gray-50 py-16'>
                 <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                     <div className='lg:text-center'>
-                        <h2 className='text-base font-semibold uppercase tracking-wide text-[#e09900]'>
+                        <h2 className='text-base font-semibold uppercase tracking-wide text-[var(--accent-color)]'>
                             Customer Voices
                         </h2>
                         <p className='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl'>
@@ -478,14 +479,15 @@ const JumpQLandingPage = () => {
                     <div className='flex-col items-center'>
                         <div className='mx-auto flex h-full w-full max-w-2xl flex-col items-center justify-center pr-8 text-center'>
                             <p className='my-5 text-base font-medium uppercase tracking-tight text-[#f7c966]'>
-                                Our customers love our product
+                                Our Team is Passionate About What We Do
                             </p>
                             <h2 className='text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl'>
-                                Testimonials
+                                Meet Our Experts
                             </h2>
                             <p className='my-6 text-xl font-medium text-gray-500'>
-                                Don't just take our word for it, read from our extensive list of
-                                case studies and customer testimonials.
+                                Don't just take our word for it—get to know the talented individuals
+                                behind our success. Read about the diverse backgrounds and expertise
+                                of the team members who drive our vision forward.
                             </p>
                         </div>
                         <div className='mx-auto flex w-full max-w-full flex-col items-center justify-center py-8 xl:max-w-full xl:flex-row'>
@@ -494,7 +496,7 @@ const JumpQLandingPage = () => {
                                     return (
                                         <div
                                             key={i}
-                                            className='overflow-hidden rounded-md bg-gray-100 max-w-72 px-3 py-2 text-gray-600'>
+                                            className='max-w-72 overflow-hidden rounded-md bg-gray-100 px-3 py-2 text-gray-600'>
                                             <div className='m-auto h-32 w-32'>
                                                 <img
                                                     src={data.image}
@@ -505,14 +507,20 @@ const JumpQLandingPage = () => {
                                             <p className='mt-2 text-center font-bold'>
                                                 {data.name}
                                             </p>
-                                            <p className='mt-2 text-center font-semibold text-[#e09900]'>
+                                            <p className='mt-2 text-center font-semibold text-[var(--accent-color)]'>
                                                 {data.deg}
                                             </p>
                                             <p className='mt-2 text-center'>{data.quote}</p>
                                             <div className='mt-4 flex items-center justify-center gap-3'>
-                                                <X />
-                                                <Facebook />
-                                                <Linkedin />
+                                                <a href='#'>
+                                                    <SiX />
+                                                </a>
+                                                <a href='#'>
+                                                    <SiFacebook />
+                                                </a>
+                                                <a href='#'>
+                                                    <SiLinkedin />
+                                                </a>
                                             </div>
                                         </div>
                                     );
@@ -524,7 +532,7 @@ const JumpQLandingPage = () => {
             </div>
 
             {/* Call to Action */}
-            <div className='bg-[#e09900]'>
+            <div className='bg-[var(--accent-color)]'>
                 <div className='mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8'>
                     <h2 className='text-3xl font-extrabold tracking-tight text-white sm:text-4xl'>
                         <span className='block'>Ready to Transform Your Sales?</span>
@@ -534,7 +542,7 @@ const JumpQLandingPage = () => {
                         <div className='inline-flex rounded-md shadow'>
                             <a
                                 href='mailto:khushal@jumpq.club'
-                                className='inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-[#e09900] hover:bg-blue-50'>
+                                className='inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-[var(--accent-color)] hover:bg-blue-50'>
                                 Contact Us <ArrowRight className='-mr-1 ml-3 h-5 w-5' />
                             </a>
                         </div>
@@ -701,12 +709,12 @@ export default JumpQLandingPage;
 function Feature({ icon: Icon, title, description, modern = false }) {
     return (
         <div className='flex items-start gap-4'>
-            <div className={`rounded-lg p-2 ${modern ? 'bg-[#e09900]/10' : 'bg-white/5'}`}>
-                <Icon className={`h-6 w-6 ${modern ? 'text-[#e09900]' : 'text-gray-400'}`} />
+            <div className={`rounded-lg p-2 ${modern ? 'bg-[var(--accent-color)]/10' : 'bg-white/5'}`}>
+                <Icon className={`h-6 w-6 ${modern ? 'text-[var(--accent-color)]' : 'text-gray-400'}`} />
             </div>
             <div>
                 <h4
-                    className={`mb-1 text-lg font-medium ${modern ? 'text-[#e09900]' : 'text-black'}`}>
+                    className={`mb-1 text-lg font-medium ${modern ? 'text-[var(--accent-color)]' : 'text-black'}`}>
                     {title}
                 </h4>
                 <p className='text-sm text-gray-400'>{description}</p>
@@ -719,7 +727,7 @@ function VisionItem({ icon: Icon, text }) {
     return (
         <div className='flex items-start gap-4'>
             <div className='rounded-lg bg-[#42D9C8]/10 p-2'>
-                <Icon className='h-6 w-6 text-[#e09900]' />
+                <Icon className='h-6 w-6 text-[var(--accent-color)]' />
             </div>
             <p className='text-gray-700'>{text}</p>
         </div>
@@ -733,7 +741,7 @@ function CustomerTestimonial() {
                 <div className='flex flex-col pr-8'>
                     <div className='relative pl-12'>
                         <svg
-                            className='absolute left-0 h-10 w-10 fill-current text-[#e09900]'
+                            className='absolute left-0 h-10 w-10 fill-current text-[var(--accent-color)]'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 100 125'>
                             <path d='M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z' />
@@ -760,7 +768,7 @@ function CustomerTestimonial() {
                 <div className='flex flex-col pr-10'>
                     <div className='relative pl-12'>
                         <svg
-                            className='absolute left-0 h-10 w-10 fill-current text-[#e09900]'
+                            className='absolute left-0 h-10 w-10 fill-current text-[var(--accent-color)]'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 100 125'>
                             <path d='M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z' />
@@ -787,7 +795,7 @@ function CustomerTestimonial() {
                 <div className='flex flex-col pr-10'>
                     <div className='relative pl-12'>
                         <svg
-                            className='absolute left-0 h-10 w-10 fill-current text-[#e09900]'
+                            className='absolute left-0 h-10 w-10 fill-current text-[var(--accent-color)]'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 100 125'>
                             <path d='M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z' />
